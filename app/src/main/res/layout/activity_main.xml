@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+   <WebView
+       android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.85"
+       android:padding="5dp">
+   </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:onClick="load"
+            android:id="@+id/btn_instagram"
+            android:background="@drawable/instagram"
+            android:layout_width="0dp"
+            android:layout_weight= "0.20"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+        <ImageButton
+            android:onClick="load"
+            android:id="@+id/btn_facebook"
+            android:background="@drawable/facebook"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+        <ImageButton
+            android:onClick="load"
+            android:id="@+id/btn_youtube"
+            android:background="@drawable/youtube"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+        <ImageButton
+            android:onClick="load"
+            android:id="@+id/btn_twitter"
+            android:background="@drawable/twitter"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+        <ImageButton
+            android:onClick="load"
+            android:id="@+id/btn_gmail"
+            android:background="@drawable/gmail"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>
